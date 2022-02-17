@@ -3,5 +3,5 @@ WORKDIR /core
 ENV PATH="./node_modules/.bin:$PATH"
 COPY . . 
 
-RUN npm run build 
+RUN npm run scripts build 
 CMD ["npm", "start"]
